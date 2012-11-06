@@ -7,7 +7,7 @@ __module_description__ = "Add flashlight (side leds) for new messages. Work on T
 fl_contexts = []
 
 def set_flashlight(hl_type=1):
-    sys_fs = open('/sys/class/leds/nvec-led/brightness','w')
+    sys_fs = open('/sys/class/leds/paz00-led/brightness','w')
     sys_fs.write(str(hl_type))
     sys_fs.close()
 
